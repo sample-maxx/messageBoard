@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <title>Homepage</title>
+</head>
+<style>
+    p{
+        overflow: auto;
+        overflow-wrap: break-word;
+         margin:0px 20px;
+    }
+    header{
+        text-align: center;
+        background-color: aqua;
+        height:15%;
+       display: grid;
+       grid-template-columns: 9fr 1fr;
+
+    }
+    header h1{
+        margin-left:100px;
+        margin-top:30px;
+    }
+    header button{
+        width:150px;
+        height:50px;
+        margin-top:30px;
+        background-color: #007bff; 
+  color: white;              
+  padding: 0px 24px;        
+  border: none;              
+  border-radius: 5px;        
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+  font-size: 16px;          
+  font-weight: bold;         
+  cursor: pointer;           
+  transition: background-color 0.3s;
+  &:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+} 
+    }
+    body {
+        background-color: royalblue;
+        padding:0px;
+        margin:0px;
+    }
+    .pack{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .card {
+        background: linear-gradient(to right, #FFD580, #FFA500, #FF8C00);
+        display: grid;
+        height:320px;
+        grid-template-rows: 30% 50% 20%;
+        margin: 10px;
+        border: 1px solid white;
+        border-radius: 10%;
+    }
+    .card-bottom{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-content: center;
+    }
+    strong{
+        margin:0px 20px;
+        width:150px;
+    }
+    span{
+        background-color: crimson;
+        margin:20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:white;
+        border-radius:50%;
+        font-weight: 600;
+        font-size:18px;
+    }
+    hr{
+        margin:10px;
+        grid-column:span 2;
+    }
+    a{
+        text-decoration: none;
+        color:inherit;
+    }
+</style>
+
+<body>
+    <%- include('message', {messages: messages,title:title}) %>
+</body>
+
+</html>
