@@ -54,17 +54,6 @@ Fill out the form with your message.
 
 Submit the form to see your message added to the list.
 
-Folder Structure
-messageBoard/
-│
-├── views/
-│   └── index.ejs       # The main page (UI).
-│   └── form.ejs        # The form (UI).
-│   └── message.ejs     # Showing defualt messages on dashboard (UI).
-├── app.js              # Main Node.js server file (using Express).
-├── package.json        # Project dependencies and metadata.
-└── README.md           # Project documentation.
-
 Dependencies
 
 Express: Web framework for Node.js to handle routing and HTTP requests.
