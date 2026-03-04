@@ -89,7 +89,24 @@
 </style>
 
 <body>
-    <%- include('message', {messages: messages,title:title}) %>
+    <nav>
+    <header><h1><%= title%></h1><button><a href="/new">New Message</a></button></header>
+       <div class='pack'>
+    <% for (let i = 0; i < messages.length; i++) { %>
+        <div class='card'>
+        <span>New Message</span>
+        <p><%= messages[i].text %></p>
+        <div class="card-bottom">
+        <hr>
+         <strong>Sender:-</strong><p><%= messages[i].sender %> </p>
+         <strong>Time:-</strong><p><%= messages[i].added.toLocaleString() %> </p>
+        </div>
+        </div>
+    <% } %>
+    </div>
+    
+</nav>
+
 </body>
 
 </html>

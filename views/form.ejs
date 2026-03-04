@@ -73,10 +73,19 @@ span{
 </head>
 <body>
     <fieldset>
-         <legend>Create New Message</legend>
-    <form action="/new" method="POST">
-        <label for="user">Your Name</label>
-        <input type="text" name="user" id="user" required>
+        <legend>Create New Message</legend>
+         <% if (errors && errors.length > 0) { %>
+    <div class="errors">
+      <ul>
+        <% errors.forEach(function(error) { %>
+          <li><%= error %></li>
+        <% }); %>
+      </ul>
+    </div>
+  <% } %>
+        <form action="/new" method="POST">
+        <label for="sender">Your Name</label>
+        <input type="text" name="sender" id="sender" required>
 
         <label for="text">Message</label>
         <textarea name="text" id="text" required></textarea>
