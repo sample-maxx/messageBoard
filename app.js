@@ -47,7 +47,7 @@ app.get('/delete', async (req, res) => {
 });
 
 const PORT = 3000;
-app.listen(PORT, (error) => {
+app.listen(PORT, '0.0.0.0',(error) => {
   if (error) {
     throw error;
   }
