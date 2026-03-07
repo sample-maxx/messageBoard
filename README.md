@@ -41,7 +41,7 @@ Start the Node.js server.
 npm start
 
 
-The application will be available at https://messageboard-production-ac45.up.railway.app/
+The application will be available at https://messageboard-production-d35d.up.railway.app/
 .
 
 Usage
