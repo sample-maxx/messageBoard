@@ -38,10 +38,10 @@ npm install ejs
 Run the Application:
 Start the Node.js server.
 
-npm start
+node app.js
 
 
-The application will be available at https://messageboard-production-d35d.up.railway.app/
+The application will be available at https://messageboard-production-b545.up.railway.app/
 .
 
 Usage
