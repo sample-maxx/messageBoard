@@ -41,7 +41,7 @@ Start the Node.js server.
 node app.js
 
 
-The application will be available at https://messageboard-production-b545.up.railway.app/
+The application will be available at https://messageboard-production-60d2.up.railway.app/
 .
 
 Usage
